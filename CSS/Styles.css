@@ -1,0 +1,341 @@
+body {
+    margin: 0px;
+}
+
+
+
+.WelcomeText {
+    font-size: 35pt;
+    justify-self: center;
+    display: block;             /* Make sure it's a block element for proper centering */
+    margin-top: 12px;
+    color: rgb(123, 60, 223);   
+}
+
+
+.hero {
+  background: #d9d9d9b2;
+  padding: 50px;
+  position: relative;
+}
+
+.herotext {
+    font-size: 50px;
+    color: rgb(123, 60, 223);
+    max-width: 700px;  
+    min-height: 20vh;
+    margin: 30px auto;    
+    margin-left: auto;
+} 
+.herosubtext {
+    font-size: 20px;
+    color: black;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  filter: blur(10px);
+}
+
+
+.SubText {
+    font-size: 15pt;
+    display: block;  
+    justify-self: center          
+
+}
+
+.SubTitle {
+    font-size: 18pt;
+    justify-self: center;
+    display: block;  
+}
+
+.indexthreecards {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  padding: 40px 50px;
+  margin: 30px auto;
+  min-height: 47vh;
+}
+
+.indexcard {
+  max-width: 350px;              
+
+}
+
+.indexcard h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.indexcard p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.navbar {
+    background-color: hsl(0, 0%, 0%);
+}
+
+
+.navbar ul {
+    list-style: none;          /* removes bullet points */
+    padding: 50;
+    margin: 0;
+    display: flex;             /* not inline-flex */
+    justify-content: center;   /* keeps items close together, not everywhere through bar */
+    gap: 0px; 
+    margin-left: 5px;              /* adjust space between words */
+}
+
+
+.navbar li {
+    list-style: none;          /* double ensure no bullets */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    transition: ease-out 0.2s;
+}
+
+.navbar a:hover {
+    background-color: rgb(123, 60, 223);
+}
+
+
+.Logo {
+    width: 54px;
+    height: 54px;
+
+} 
+
+.cards-container {
+    display: flex;             
+    justify-content: center;    
+    gap: 40px;                  
+    margin-top: 40px;          
+}
+
+.card {
+    max-width: 250px;
+    margin: 0px;                  
+    padding: 20px;
+}
+
+.card2 {
+    padding-left: 4px;
+    padding-bottom: 100px;
+    max-width: 250px;
+    margin: 0 20px;
+}
+
+
+.SubjectLogo {   
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+button {
+    outline: 0;
+    outline-color: rgb(123, 60, 223);
+    outline-style:ridge;
+    outline-width: 3px; 
+
+    border-color: rgb(123, 60, 223);
+    border-width: 3px;
+    border-style: solid;
+
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    box-shadow:rgb(123, 60, 223);
+}
+
+.Resourceviewfooter {
+    min-height: 49vh;
+}
+
+.school_footer {
+    /* background-color:rgb(11, 14, 107); 80, 49, 167 */
+    background: #0B0E6B;
+    background: linear-gradient(180deg,rgba(11, 14, 107, 1) 0%, rgba(24, 26, 121, 1) 43%, rgba(87, 89, 194, 1) 100%);
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 150px;
+    margin-bottom: -50px;
+    padding-bottom: 50px;
+    padding: 16px;
+    margin-top: auto;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: center;
+    padding: 8px;
+    
+}
+
+.footer_text {
+    font-size: 12pt;        
+    color: rgb(255, 255, 255);
+    margin: 8px;
+
+}
+
+.aboutus-body {
+    padding: 0;
+}
+
+.logo_holder {
+    justify-content: center;
+    justify-self: center;
+    position: relative;
+    text-align: center;
+}
+
+.logo_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32pt;
+    justify-self: center;
+    display: block;             /* Make sure it's a block element for proper centering */
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 10px rgb(255, 255, 255);
+    paint-order: stroke fill;
+}
+
+.CafeInformation {
+    justify-content: center;
+    justify-self: center;
+    width: 1350px;
+    max-height: 100px;
+}
+
+.resizable_image {
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+
+.AboutUscontact-container {
+    max-width: 700px;  
+    min-height: 80vh;
+    margin: 0 auto;    
+    padding: 20px;     
+}
+
+.contact-container {
+    max-width: 700px;  
+    min-height: 84vh;
+    margin: 0 auto;    
+    padding: 20px;     
+}
+
+.Aboutcontact-container {
+    max-width: 700px;  
+    min-height: 84vh;
+    margin: 0 auto;    
+    padding: 20px;     
+}
+.Cafecontact-container {
+    max-width: 700px;  
+    min-height: 40vh;
+    margin: 0 auto;    
+    padding: 20px;  
+}
+
+
+.ContactUs {
+    color:rgb(123, 60, 223);
+}
+
+
+
+.InformationIcon {
+    width: 150px;
+    height: 150px;
+    height: auto;
+    flex-shrink: 0;   
+}
+
+.TelephoneIcon {
+    width: 180px;
+    height: 150px;
+    height: auto;
+    flex-shrink: 0; 
+    padding-right: 50px;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between; /* text left, icon right */
+    align-items: flex-start;        /* top alignment */
+    gap: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table.menu {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.menu th,
+table.menu td {
+    border: 1px solid #000;
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+}
+
+table.menu th {
+    background: #f2f2f2;
+}
+    
